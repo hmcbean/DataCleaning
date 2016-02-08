@@ -9,6 +9,7 @@ A. Setup:
 4. Run the script. 
 
 
+
 B. Steps in the data cleaning and analysis:
 
 1. The descriptive activity lables (activity_labels.txt) are joined to the training lables (y_train.txt) and test lables (y_test.txt).
