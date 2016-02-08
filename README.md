@@ -10,6 +10,7 @@ A. Setup:
 
 
 B. Steps in the data cleaning and analysis:
+
 1. The descriptive activity lables (activity_labels.txt) are joined to the training lables (y_train.txt) and test lables (y_test.txt).
 2. The descriptive feature names are extracted for use in the next step.
 3. The training subjects are merged to the training lables and the training data.
