@@ -2,7 +2,9 @@
 
 
 A. Setup:
+
 1. Create a working folder on your computer.
+2. 
 2. Copy the "data" folder and all its contents from this repo to your working folder. the "data" folder contains a sub folder "UCI_HAR_Dataset" witgh the "unclean" data.
 3. Copy the R script file "run_analysis.R" from this repo to your working folder.
 4. Run the script. 
