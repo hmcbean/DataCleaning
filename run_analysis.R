@@ -172,15 +172,15 @@ write.csv(meanstd, file = "./data/meanstd.csv", append = FALSE, quote = TRUE, se
 
 # -------------------------------------------------------------------------------------------------
 # Step B7
-# Create a second, independent tidy data set (named "average_alldata") with the average of each 
+# Create a second, independent tidy data set (named "summarized_meanstd") with the average of each 
 # variable for each activity and each subject.
 # -------------------------------------------------------------------------------------------------
 # Summarize
-summarized_data <- alldata %>% group_by(subjectid, activityname) %>% summarise_each(funs(mean(.,na.rm = TRUE))) 
+summarized_meanstd <- meanstd %>% group_by(subjectid, activityname) %>% summarise_each(funs(mean(.,na.rm = TRUE))) 
 
 # Write out the dataset
-write.csv(summarized_data, file = "./data/summarized_data.csv", append = FALSE, quote = TRUE, sep = ",",
+write.table(summarized_meanstd, file = "./data/summarized_data.txt", append = FALSE, quote = FALSE, sep = " ",
             eol = "\n", na = "NA", dec = ".", row.names = FALSE,
-            col.names = TRUE, qmethod = "double")
+            col.names = TRUE, qmethod = c("escape", "double"))
 
 
